@@ -1,0 +1,50 @@
+@media only screen and (min-width: 768px) {
+    body {
+      background-image: url("/phpmotors/images/site/small_check.jpg");
+      background-size: cover;
+    }
+  
+    #wrapper {
+      border: 5px solid #4c96d7;
+      border-radius: 10px;
+      border-width: 4px;
+      background-color: white;
+      margin-top: 1em;
+      width: 75%;
+      margin: auto;
+    }
+
+    #reviews {
+        grid-area: reviews;
+    }
+
+    #upgrades {
+        grid-area: upgrades;
+    }
+
+    #stact {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'upgrades reviews';
+    }
+
+    #pic-details {
+        grid-area: pic-details;
+    }
+
+    #own-botton-div {
+        grid-area: own-botton-div;
+        position: absolute;
+        top: 300px;
+        left: 100px;
+    }
+
+    #picstack {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'pic-details'
+                             'own-botton-div';
+    }
+}
